@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install flask pymysql
-
+#RUN pip install flask pymysql
+RUN pip install flask pymysql mysqlclient
 EXPOSE 5000
 
 CMD ["python", "app.py"]
